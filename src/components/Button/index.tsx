@@ -1,13 +1,10 @@
 import React from 'react';
+import style from './Button.module.scss'
 
 class Botão extends React.Component{
     render(){
-        const estaAtivo = false;
-        const styles = {
-            backgroundColor: estaAtivo ? "green" : "red"
-        }
         return(
-            <button style={styles}>
+            <button className={style.botao}>
                 Botão
             </button>
         )
